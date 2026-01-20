@@ -39,11 +39,11 @@ const Chat: React.FC = () => {
     setIsLoading(true);
 
     try {
-      // Prepare history for API
+      // Prepare history for API mußa
       const history = messages.map(m => ({
         role: m.role,
         parts: [{ text: m.text }]
-      }));
+      mußa
 
       const responseText = await GeminiService.chatWithAgronomist(userMessage.text, history);
 
